@@ -28,6 +28,13 @@ class AllinRefund(object):
         self.values['appid'] = appid
         self.md5Key = md5Key
         self.values['version'] = '11'
+    
+    def setOrgid(self, orgid):
+        ''' 设置orgid
+        --
+        '''
+        if orgid:
+            self.values['orgid'] = orgid
 
 
     def setOldreqsn(self, oldreqsn):

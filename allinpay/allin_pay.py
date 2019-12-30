@@ -31,6 +31,13 @@ class AllinPay(object):
         self.values['paytype'] = 'A01'
         self.values['validtime'] = '15'
     
+    def setOrgid(self, orgid):
+        ''' 设置orgid
+        --
+        '''
+        if orgid:
+            self.values['orgid'] = orgid
+    
     def setPaytype(self, paytype):
         ''' 设置设置支付方式
         :param paytype: https://aipboss.allinpay.com/know/devhelp/main.php?pid=24
